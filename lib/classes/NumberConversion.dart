@@ -13,7 +13,7 @@ class NumberConversion {
     return decValue;
   }
 
-  decimalToBinary(v) {
+  decimalToBinary(int v) {
     int num = v;
     List<int> binary = [];
 

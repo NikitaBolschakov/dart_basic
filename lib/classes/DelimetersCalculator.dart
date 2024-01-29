@@ -1,5 +1,5 @@
 class DelimetersCalculator {
-  int gcd(a, b) {
+  int gcd(int a, int b) {
     while (a > 0 && b > 0) {
       if (a >= b) {
         a = a % b;
@@ -11,7 +11,7 @@ class DelimetersCalculator {
     return res;
   }
 
-  dynamic lcm(a, b) {
+  int lcm(int a, int b) {
     return (a * b) ~/ gcd(a, b);
   }
 }

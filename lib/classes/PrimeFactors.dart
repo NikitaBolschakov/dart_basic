@@ -1,5 +1,5 @@
 class PrimeFactors {
-  decompose(int inputNumber) {
+  List<int> decompose(int inputNumber) {
     // объявляем внутреннюю функцию — она проверяет, простое число ей передали или нет
     bool isPrime(int m) {
       for (int i = 2; i < m; i++) {
@@ -11,7 +11,7 @@ class PrimeFactors {
       return true;
     }
 
-    var result = [];
+    List<int> result = [];
 
     // точно так же проходим все числа от 2 до введённого числа
     for (int j = 2; j < inputNumber; j++) {
