@@ -4,6 +4,7 @@ import 'classes/NumberConversion.dart';
 import 'classes/ParseInt.dart';
 import 'classes/Point.dart';
 import 'classes/PrimeFactors.dart';
+import 'classes/RiemannIntegral.dart';
 import 'classes/TransformInNumbers.dart';
 import 'classes/DelimetersCalculator.dart';
 import 'classes/User.dart';
@@ -106,4 +107,10 @@ void main(List<String> arguments) {
   userManager.addUser(simpleUser);
 
   print(userManager.displayUserEmails(userManager.users));
+
+  //задание 9
+  f(double x) => x * x; // функция, для которой вычисляем интеграл
+  RiemannIntegral riemann = RiemannIntegral();
+  double integral = riemann.calculate(f, 0, 2, 2000);
+  print('Значение определенного интеграла: $integral');
 }
